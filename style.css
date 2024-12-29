@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #1a1a1a;
+    color: white;
+    margin: 0;
+}
+header {
+    background: #333;
+    padding: 20px 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.navbar a.logo {
+    color: #ff9800;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.language-switcher button {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.language-switcher button:hover {
+    background: #ff9800;
+}
+.hero {
+    background: linear-gradient(135deg, #ff9800, #ff5722);
+    text-align: center;
+    padding: 100px 20px;
+}
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 20px;
+}
+.services {
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+}
+.services h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.service-item {
+    background: #333;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 30%;
+    box-sizing: border-box;
+}
+.service-item h3 {
+    font-size: 30px;
+    color: #ff9800;
+    margin-bottom: 10px;
+}
+.service-item p {
+    font-size: 18px;
+}
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #ff9800;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.cta-button:hover {
+    background: #ff5722;
+}
+footer {
+    background: #333;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+footer p {
+    font-size: 16px;
+}
+.service {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.service-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff9800;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.service-title:hover {
+    color: #ff5722;
+}
+.service-details {
+    display: none;
+    padding-top: 10px;
+}
+.service-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+.service-details ul li {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+.service-details ul li:before {
+    content: "✔";
+    color: #ff5722;
+    margin-right: 10px;
+}
+.service-details ul li:hover {
+    color: #ff9800;
+}
+/* Responsive Design for Services */
+@media (max-width: 768px) {
+    .service {
+        margin: 10px;
+    }
+    .service-title {
+        font-size: 20px;
+    }
+    .service-details ul li {
+        font-size: 16px;
+    }
+}
